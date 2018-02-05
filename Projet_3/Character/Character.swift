@@ -18,4 +18,7 @@ class Character {
         self.weapon = weapon
     }
     
+    func attack() {
+        vitalityPoints -= weapon.damage
+    }
 }
