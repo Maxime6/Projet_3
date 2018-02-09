@@ -10,6 +10,26 @@ class Game {
     
     var character = [Character]()
     
+    var team1 = [Character]()
+    
+    var team2 = [Character]()
+    
+    func createAFighter() {
+        team1.append(Fighter())
+    }
+    
+    func createAMagus() {
+        
+    }
+    
+    func createAColossus() {
+        
+    }
+    
+    func createADwarf() {
+        
+    }
+    
     func createCharacter() {
         print("Select a Character :")
         print("1. Fighter")
@@ -20,12 +40,25 @@ class Game {
         if let choice = readLine() {
             switch choice {
             case "1": // Create a Fighter
+                createAFighter()
             case "2": // Create a Magus
+                createAMagus()
             case "3": // Create a Colossus
+                createAColossus()
             case "4": // Create a Dwarf
+                createADwarf()
             default: 
             }
         }
     }
     
+    func createATeam() {
+        print("Create your first Team :")
+        while team1.count <= 3 {
+            createCharacter()
+        } if else 
+    }
+    
 }
+
+
