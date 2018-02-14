@@ -6,6 +6,8 @@
 //  Copyright © 2018 Maxime Tanter. All rights reserved.
 //
 
+import Foundation
+
 class Sword: Weapon {
     
     init() {

@@ -6,7 +6,8 @@
 //  Copyright © 2018 Maxime Tanter. All rights reserved.
 //
 
+import Foundation
 
-
-
+let game = Game()
+game.start()
 

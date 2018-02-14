@@ -6,6 +6,8 @@
 //  Copyright © 2018 Maxime Tanter. All rights reserved.
 //
 
+import Foundation
+
 class Character {
     
     var name: String
@@ -18,7 +20,7 @@ class Character {
         self.weapon = weapon
     }
     
-    func attack() {
-        vitalityPoints -= weapon.damage
+    func attack(target: Character) {
+        target.vitalityPoints -= weapon.damage
     }
 }

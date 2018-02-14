@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C08D6BA202D9C5B0080356B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08D6B9202D9C5B0080356B /* Team.swift */; };
 		9C70A80F20249BEB00005824 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70A80E20249BEB00005824 /* Character.swift */; };
 		9C70A81120249BF300005824 /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70A81020249BF300005824 /* Fighter.swift */; };
 		9C70A81320249BFF00005824 /* Magus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70A81220249BFF00005824 /* Magus.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C08D6B9202D9C5B0080356B /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		9C70A80E20249BEB00005824 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		9C70A81020249BF300005824 /* Fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
 		9C70A81220249BFF00005824 /* Magus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magus.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				9C70A8232024AA0000005824 /* Game.swift */,
+				9C08D6B9202D9C5B0080356B /* Team.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			files = (
 				9C70A81520249C0700005824 /* Colossus.swift in Sources */,
 				9CFA2F34202461DE001416E4 /* main.swift in Sources */,
+				9C08D6BA202D9C5B0080356B /* Team.swift in Sources */,
 				9C70A81D20249C5F00005824 /* Axe.swift in Sources */,
 				9C70A81720249C0F00005824 /* Dwarf.swift in Sources */,
 				9C70A8212024A45800005824 /* Shield.swift in Sources */,

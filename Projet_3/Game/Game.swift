@@ -6,59 +6,37 @@
 //  Copyright © 2018 Maxime Tanter. All rights reserved.
 //
 
+import Foundation
+
 class Game {
     
-    var character = [Character]()
+    var teams = [Team]()
     
-    var team1 = [Character]()
-    
-    var team2 = [Character]()
-    
-    func createAFighter() {
-        team1.append(Fighter())
-    }
-    
-    func createAMagus() {
+    func start() {
+        print("intro")
         
-    }
-    
-    func createAColossus() {
-        
-    }
-    
-    func createADwarf() {
-        
-    }
-    
-    func createCharacter() {
-        print("Select a Character :")
-        print("1. Fighter")
-        print("2. Magus")
-        print("3. Colossus")
-        print("4. Dwarf")
-        
-        if let choice = readLine() {
-            switch choice {
-            case "1": // Create a Fighter
-                createAFighter()
-            case "2": // Create a Magus
-                createAMagus()
-            case "3": // Create a Colossus
-                createAColossus()
-            case "4": // Create a Dwarf
-                createADwarf()
-            default: 
-            }
+        for _ in 0..<2 {
+            let team = createATeam()
+            teams.append(team)
         }
     }
     
-    func createATeam() {
-        print("Create your first Team :")
-        while team1.count <= 3 {
-            createCharacter()
-        } if else 
+
+    
+    func createATeam() -> Team {
+        let team = Team()
+        team.createCharacter()
+        return team
     }
     
+    func fight() {
+        
+//        for i in 0..<2 {
+//            let personnage = teams[i].characters[0]
+//            personnage.attack(target: <#T##Character#>)
+//        }
+//
+    }
 }
 
 
