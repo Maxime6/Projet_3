@@ -15,10 +15,12 @@ class Game {
     func start() {
         print("intro")
         
-        for _ in 0..<2 {
+        for i in 0..<2 {
+            print("Created Team \(i+1):")
             let team = createATeam()
             teams.append(team)
         }
+        fight()
     }
     
 
@@ -30,7 +32,7 @@ class Game {
     }
     
     func fight() {
-        
+
 //        for i in 0..<2 {
 //            let personnage = teams[i].characters[0]
 //            personnage.attack(target: <#T##Character#>)
