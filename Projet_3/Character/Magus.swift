@@ -13,4 +13,8 @@ class Magus: Character {
     init(name: String) {
         super.init(name: name, vitalityPoints: 70, weapon: Wand())
     }
+    
+    func heal(target: Character) {
+        target.vitalityPoints += weapon.damage
+    }
 }

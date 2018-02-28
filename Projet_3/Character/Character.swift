@@ -23,4 +23,9 @@ class Character {
     func attack(target: Character) {
         target.vitalityPoints -= weapon.damage
     }
+    
+    func description(index: Int) {
+        print("\(index) . \(name) . \(vitalityPoints) pdv . \(weapon)")
+    }
+    
 }

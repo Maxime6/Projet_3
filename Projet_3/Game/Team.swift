@@ -11,7 +11,8 @@ import Foundation
 class Team {
     
     var characters = [Character]()
-
+    
+    var teamVitality = 0
     
     func createCharacter() {
         
@@ -21,14 +22,12 @@ class Team {
             
             var characterChoice = 0
             
-            
             print("Select the class of your character \(i) :")
             print("1. Fighter")
             print("2. Magus")
             print("3. Colossus")
             print("4. Dwarf")
-
-            
+        
             repeat {
                 characterChoice = Input.inputInt()
             } while characterChoice != 1 && characterChoice != 2 && characterChoice != 3 && characterChoice != 4
@@ -52,9 +51,21 @@ class Team {
             }
 
         }
-        
 
     }
     
+    func teamDescription() {
+        for i in 0..<characters.count {
+            let character = characters[i]
+            character.description(index: i+1)
+        }
+    }
+    
+    func calculateTeamVitality() {
+        
+        for character in characters {
+            teamVitality += character.vitalityPoints
+        }
+    }
     
 }

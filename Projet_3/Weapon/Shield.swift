@@ -13,6 +13,6 @@ class Shield: Weapon {
     var reducedDamage = 8
     
     init() {
-        super.init(name: "Shield", damage: 0)
+        super.init(name: "Shield", damage: 0, care: 0)
     }
 }

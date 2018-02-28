@@ -10,9 +10,7 @@ import Foundation
 
 class Wand: Weapon {
     
-    var care = 15
-    
     init() {
-        super.init(name: "Wand", damage: 0)
+        super.init(name: "Wand", damage: 0, care: 20)
     }
 }
