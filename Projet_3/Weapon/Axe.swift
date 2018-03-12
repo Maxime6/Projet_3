@@ -11,6 +11,6 @@ import Foundation
 class Axe: Weapon {
     
     init() {
-        super.init(name: "Axe", damage: 10, care: 0)
+        super.init(name: "Axe", damage: 20, care: 0)
     }
 }

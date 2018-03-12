@@ -11,6 +11,6 @@ import Foundation
 class Fighter: Character {
     
     init(name: String) {
-        super.init(name: name, vitalityPoints: 100, weapon: Sword())
+        super.init(name: name, vitalityPoints: 100, weapon: Sword(), vitalityMax: 100)
     }
 }

@@ -23,10 +23,10 @@ class Team {
             var characterChoice = 0
             
             print("Select the class of your character \(i) :")
-            print("1. Fighter")
-            print("2. Magus")
-            print("3. Colossus")
-            print("4. Dwarf")
+            print("1. Fighter / Feature : pdv = 100, weapon = Sword, damage = 15 ")
+            print("2. Magus / Feature : pdv = 70, weapon = Wand, care = 20 ")
+            print("3. Colossus / Feature : pdv = 130, weapon = Shield, damage = 8 ")
+            print("4. Dwarf / Feature : pdv = 60, weapon = Axe, damage = 20 ")
         
             repeat {
                 characterChoice = Input.inputInt()
@@ -61,11 +61,16 @@ class Team {
         }
     }
     
-    func calculateTeamVitality() {
-        
+    func teamIsDead() -> Bool {
+        var teamIsDead = false
         for character in characters {
-            teamVitality += character.vitalityPoints
+            if character.vitalityPoints == 0 {
+                teamIsDead = true
+            } else {
+                return false
+            }
         }
+        return teamIsDead
     }
     
 }
