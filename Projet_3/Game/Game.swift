@@ -68,7 +68,21 @@ class Game {
     }
     
     func magicChest(character: Character) {
-        
+        // un nombre aléatoire
+        let randomNumber = arc4random_uniform(100)
+        if randomNumber > 80 {
+            print("A Chest appears !")
+            print("")
+            
+            if let magus = character as? Magus {
+                let legendaryWand = LegendaryWand()
+                magus.weapon = legendaryWand
+            } else {
+                let hammerOfGod = HammerOfGod()
+                character.weapon = hammerOfGod
+            }
+        }
+
     }
    
     func fight() {

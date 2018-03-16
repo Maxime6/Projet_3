@@ -11,7 +11,7 @@ import Foundation
 class Magus: Character {
     
     init(name: String) {
-        super.init(name: name, vitalityPoints: 70, weapon: Wand(), vitalityMax: 70)
+        super.init(name: name, vitalityPoints: 70, weapon: Wand(), weapon2: LegendaryWand(), vitalityMax: 70)
     }
     
     func heal(target: Character) {

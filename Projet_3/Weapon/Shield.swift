@@ -10,8 +10,6 @@ import Foundation
 
 class Shield: Weapon {
     
-    var reducedDamage = 8
-    
     init() {
         super.init(name: "Shield", damage: 8, care: 0)
     }
