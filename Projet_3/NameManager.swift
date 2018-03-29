@@ -15,12 +15,14 @@ class NameManager {
     private init() { }
     var names = [String]()
     
+    // Check unique name in program
     func uniqueCharacterName() -> String {
         var name = ""
         repeat {
             name = Input.inputString()
             if names.contains(name) {
-                print("This character name is already taken.")
+                print("⚠️ This character name is already taken.")
+                print("Please choose another name :")
                 name = ""
             }
             names.append(name)

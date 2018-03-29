@@ -10,31 +10,36 @@ import Foundation
 
 class Team {
     
+    // The characters of the teams
     var characters = [Character]()
     
+    // Creat a character
     func createCharacter() {
         
         for i in 1...3 {
             
+            // Character name
             var name = ""
             
+            // User character choice
             var characterChoice = 0
             
-            print("Select the class of your character \(i) :")
             print("")
-            print("1. Fighter / Feature : pdv = 100, weapon = Sword, damage = 15 ")
+            print("☞ Select the class of your character \(i) :")
             print("")
-            print("2. Magus / Feature : pdv = 70, weapon = Wand, care = 20 ")
+            print("1. Fighter / ♥️ = 100, ⚔️ = Sword, 💥 = 15 ")
             print("")
-            print("3. Colossus / Feature : pdv = 130, weapon = Shield, damage = 8 ")
+            print("2. Magus / ♥️ = 70, ⚔️ = Wand, 💗 = 20 ")
             print("")
-            print("4. Dwarf / Feature : pdv = 60, weapon = Axe, damage = 20 ")
+            print("3. Colossus / ♥️ = 130, ⚔️ = Shield, 💥 = 8 ")
+            print("")
+            print("4. Dwarf / ♥️ = 60, ⚔️ = Axe, 💥 = 20 ")
         
             repeat {
                 characterChoice = Input.inputInt()
             } while characterChoice != 1 && characterChoice != 2 && characterChoice != 3 && characterChoice != 4
             
-            print("Enter the name of your character \(i) :")
+            print("Choose his name :")
             
             name = NameManager.shared.uniqueCharacterName()
             
@@ -54,6 +59,7 @@ class Team {
 
     }
     
+    // Team Description
     func teamDescription() {
         for i in 0..<characters.count {
             let character = characters[i]
@@ -61,6 +67,7 @@ class Team {
         }
     }
     
+    // Check if a team loses
     func teamIsDead() -> Bool {
         var teamIsDead = false
         for character in characters {

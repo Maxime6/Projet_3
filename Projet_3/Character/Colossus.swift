@@ -11,6 +11,6 @@ import Foundation
 class Colossus: Character {
     
     init(name: String) {
-        super.init(name: name, vitalityPoints: 130, weapon: Shield(), weapon2: HammerOfGod(), vitalityMax: 130)
+        super.init(name: name, vitalityPoints: 130, weapon: Shield(), vitalityMax: 130)
     }
 }

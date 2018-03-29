@@ -11,6 +11,6 @@ import Foundation
 class Dwarf: Character {
     
     init(name: String) {
-        super.init(name: name, vitalityPoints: 60, weapon: Axe(), weapon2: HammerOfGod(), vitalityMax: 60)
+        super.init(name: name, vitalityPoints: 60, weapon: Axe(), vitalityMax: 60)
     }
 }

@@ -11,7 +11,7 @@ import Foundation
 class HammerOfGod: Weapon {
     
     init() {
-        super.init(name: "Hammer", damage: 50, care: 0)
+        super.init(name: "Hammer", damage: 40, care: 0)
     }
     
 }

@@ -13,31 +13,38 @@ class Character {
     var name: String
     var vitalityPoints: Int
     var weapon: Weapon
-    var weapon2: Weapon
     let vitalityMax: Int
     
-    init(name: String, vitalityPoints: Int, weapon: Weapon, weapon2: Weapon, vitalityMax: Int) {
+    init(name: String, vitalityPoints: Int, weapon: Weapon, vitalityMax: Int) {
         self.name = name
         self.vitalityPoints = vitalityPoints
         self.weapon = weapon
-        self.weapon2 = weapon2
         self.vitalityMax = vitalityMax
     }
     
     func attack(target: Character) {
+        //
         target.vitalityPoints -= weapon.damage
-        // vitalité pas négative
+        // Check that vitality is not negative
         if target.vitalityPoints < 0 {
             target.vitalityPoints = 0
-            print("\(target.name) is dead.")
+            print("\(target.name) loses his last pdv...")
+            print("\(target.name) is dead. ☠️")
+            print("")
+        } else if target.vitalityPoints == 0 {
+            print("\(target.name) loses his last pdv...")
+            print("\(target.name) is dead. ☠️")
+            print("")
         } else {
-            // print de l'action
-            print("\(target.name) loses \(weapon.damage) pdv - pdv : \(target.vitalityPoints)")
+            // print of the action
+            print("\(target.name) loses \(weapon.damage) pdv 🤕 - ♥️ = \(target.vitalityPoints)")
+            print("")
         }
     }
     
+    // Description of the characters
     func description(index: Int) {
-        print(" \(index) . \(name) . \(vitalityPoints) pdv . \(weapon.name) : \(weapon.damage) ")
+        print(" \(index) . \(name) . \(vitalityPoints) pdv . \(weapon.name) damage : \(weapon.damage) ")
         
     }
     
