@@ -10,8 +10,11 @@ import Foundation
 
 class Weapon {
     
+    // Name of the weapon
     var name: String
+    // Damage of the weapon
     var damage: Int
+    // Care of the weapon
     var care : Int
     
     init(name: String, damage: Int, care: Int) {

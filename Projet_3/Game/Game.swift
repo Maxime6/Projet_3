@@ -137,7 +137,6 @@ class Game {
             
             for i in 0...1 {
                 
-                
                 print("☞ Player \(i + 1), select your character :")
                 
                 // Show the team doing the action

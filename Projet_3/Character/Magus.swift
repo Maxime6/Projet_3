@@ -14,17 +14,23 @@ class Magus: Character {
         super.init(name: name, vitalityPoints: 70, weapon: Wand(), vitalityMax: 70)
     }
     
+    // Heal a character of own team
     func heal(target: Character) {
-        target.vitalityPoints += weapon.care
-        // check vitalité max
-        if target.vitalityPoints > target.vitalityMax || target.vitalityPoints == target.vitalityMax {
-            target.vitalityPoints = target.vitalityMax
-            print("\(target.name) has recovered all his pdv 💗💪🏼")
-            print("")
+        if target.vitalityPoints > 0 {
+            // Calculation of heal
+            target.vitalityPoints += weapon.care
+            // Check the vitality max
+            if target.vitalityPoints > target.vitalityMax || target.vitalityPoints == target.vitalityMax {
+                target.vitalityPoints = target.vitalityMax
+                print("\(target.name) has recovered all his pdv 💗💪🏼")
+                print("")
+                // If it's not vitality max
+            } else {
+                print("\(target.name) has recovered \(weapon.care)pdv 💗 - ♥️ = \(target.vitalityPoints)")
+                print("")
+            }
         } else {
-            print("\(target.name) has recovered \(weapon.care)pdv 💗 - ♥️ = \(target.vitalityPoints)")
-            print("")
+            print("I can't heal because \(target.name) is dead..")
         }
     }
-    
 }

@@ -10,11 +10,13 @@ import Foundation
 
 class Input {
     
+    // Check that the readLine is a String
     static func inputString() -> String {
         guard let data = readLine() else { return "" }
         return data
     }
     
+    // Convert readLine in Int
     static func inputInt() -> Int {
         guard let data = readLine() else { return 0 }
         guard let result = Int(data) else { return 0 }
